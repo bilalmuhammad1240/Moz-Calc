@@ -1,0 +1,8 @@
+
+body{font-family:Arial,sans-serif;margin:0;background:#f5f7fa}
+header{background:#123;padding:30px;color:white;text-align:center}
+header input{padding:12px;width:min(500px,90%)}
+main{max-width:1100px;margin:auto;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.tool{background:white;padding:20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.tool input,.tool button{width:100%;padding:10px;margin:6px 0;box-sizing:border-box}
+.tool button{cursor:pointer}

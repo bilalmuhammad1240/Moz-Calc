@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MozCalc - Ferramentas Úteis</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>MozCalc</h1>
+<p>Calculadoras para negócios, construção e transporte</p>
+<input type="text" id="search" placeholder="Pesquisar ferramenta...">
+</header>
+
+<main>
+<section class="tool">
+<h2>Calculadora de Lucro</h2>
+<input id="cost" type="number" placeholder="Custo de compra">
+<input id="sell" type="number" placeholder="Preço de venda">
+<input id="qty" type="number" placeholder="Quantidade">
+<button onclick="calcProfit()">Calcular</button>
+<div id="profitResult"></div>
+</section>
+
+<section class="tool">
+<h2>Meta de Vendas</h2>
+<input id="goal" type="number" placeholder="Meta mensal">
+<input id="days" type="number" placeholder="Dias restantes">
+<button onclick="calcGoal()">Calcular</button>
+<div id="goalResult"></div>
+</section>
+
+<section class="tool">
+<h2>Consumo de Combustível</h2>
+<input id="distance" type="number" placeholder="Distância (km)">
+<input id="consumption" type="number" placeholder="Consumo (km/l)">
+<input id="fuelprice" type="number" placeholder="Preço combustível">
+<button onclick="calcFuel()">Calcular</button>
+<div id="fuelResult"></div>
+</section>
+
+<section class="tool">
+<h2>Horas Trabalhadas</h2>
+<input id="start" type="time">
+<input id="end" type="time">
+<button onclick="calcHours()">Calcular</button>
+<div id="hoursResult"></div>
+</section>
+
+<section class="tool">
+<h2>Construção</h2>
+<input id="length" type="number" placeholder="Comprimento (m)">
+<input id="width" type="number" placeholder="Largura (m)">
+<button onclick="calcConstruction()">Calcular</button>
+<div id="constructionResult"></div>
+</section>
+</main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
